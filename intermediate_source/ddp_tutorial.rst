@@ -9,7 +9,7 @@ Getting Started with Distributed Data Parallel
 
 Prerequisites:
 
--  `PyTorch Distributed Overview <../beginner/dist_overview.html>`__
+-  `PyTorch Distributed Overview <https://pytorch.org/tutorials/beginner/dist_overview.html>`__
 -  `DistributedDataParallel API documents <https://pytorch.org/docs/master/generated/torch.nn.parallel.DistributedDataParallel.html>`__
 -  `DistributedDataParallel notes <https://pytorch.org/docs/master/notes/ddp.html>`__
 
@@ -189,7 +189,7 @@ argument to prevent a process from stepping into others' devices. If ``map_locat
 is missing, ``torch.load`` will first load the module to CPU and then copy each
 parameter to where it was saved, which would result in all processes on the
 same machine using the same set of devices. For more advanced failure recovery
-and elasticity support, please refer to `TorchElastic <https://pytorch.org/elastic>`__.
+and elasticity support, please refer to `TorchElastic <https://pytorch.org/docs/stable/distributed.elastic.html>`__.
 
 .. code:: python
 
